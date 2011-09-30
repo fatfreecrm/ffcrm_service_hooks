@@ -1,0 +1,3 @@
+page[:flash].replace_html flash[:notice]
+page.call "crm.flash", :notice
+flash[:notice] = nil

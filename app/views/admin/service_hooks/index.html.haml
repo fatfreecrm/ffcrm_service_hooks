@@ -1,0 +1,20 @@
+.title
+  Service Hooks
+
+%p
+  You can set up a service hook for each action. Data will be POSTed to the URLs that you specify below.
+
+.list
+  .remote
+    = form_tag admin_service_hooks_path, :method => :put, :remote => true do
+      .section
+        %table
+          %tr
+            %td(colspan="3")
+              .label.top.req Merge URL:
+              = text_field_tag 'service_hooks[merge_url]', @service_hooks[:merge_url], :style => "width:500px"
+      .buttonbar
+        = submit_tag 'Save hooks', :name => :save
+        #{t :or}
+        = link_to_cancel admin_service_hooks_path
+
