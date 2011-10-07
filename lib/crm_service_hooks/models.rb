@@ -4,7 +4,13 @@ Contact.class_eval do
       if merge_url = (Setting[:service_hooks] || {})["merge_url"]
         Rails.logger.info "Contact merge service hook: POST data to #{merge_url}..."
         begin
-          Nestful.post merge_url, :format => :form, :params => {:old_id => self.id, :new_id => master.id}
+          Nestful.post merge_url, :format => :form,
+                                  :params => {
+                                    :merge => {
+                                      :old_contact => {:id => self.id},
+                                      :new_contact => {:id => master.id, :name => master.name}
+                                    }
+                                  }
         rescue Exception => ex
           Rails.logger.error "POST failed! #{ex.message}"
         end
