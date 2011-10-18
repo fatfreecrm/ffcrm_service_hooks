@@ -15,6 +15,7 @@ Contact.class_eval do
           Rails.logger.error "POST failed! #{ex.message}"
         end
       end
+      true
     end
   end
 
