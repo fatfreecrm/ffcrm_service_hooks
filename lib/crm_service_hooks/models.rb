@@ -1,6 +1,6 @@
 Contact.class_eval do
   def merge_with_with_service_hook(master, ignored_attr = {})
-    if merge_with_without_service_hook(master, ignored_attr = {})
+    if merge_with_without_service_hook(master, ignored_attr)
       if merge_url = (Setting[:service_hooks] || {})["merge_url"]
         Rails.logger.info "Contact merge service hook: POST data to #{merge_url}..."
         begin
