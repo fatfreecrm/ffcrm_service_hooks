@@ -14,6 +14,8 @@ Contact.class_eval do
         rescue Exception => ex
           Rails.logger.error "POST failed! #{ex.message}"
         end
+      else
+        Rails.logger.info "No merge_url defined in settings. Ignoring merge..."
       end
       true
     end
