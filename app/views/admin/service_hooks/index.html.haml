@@ -10,9 +10,14 @@
       .section
         %table
           %tr
-            %td(colspan="3")
+            %td
               .label.top.req Merge URL:
               = text_field_tag 'service_hooks[merge_url]', @service_hooks[:merge_url], :style => "width:500px"
+              .label.top.req API Token:
+              = text_field_tag 'service_hooks[api_token]', @service_hooks[:api_token], :style => "width:200px"
+              .label URL that will be used
+              %div(id='service_hooks_url')
+                = @service_hooks_url
       .buttonbar
         = submit_tag 'Save hooks', :name => :save
         #{t :or}
