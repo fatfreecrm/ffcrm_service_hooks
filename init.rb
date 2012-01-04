@@ -10,7 +10,7 @@ FatFreeCRM::Plugin.register(:crm_service_hooks, self) do
             tab :admin, :text => "Service Hooks", :url => { :controller => "admin/service_hooks" }
 end
 
-if (Setting[:service_hooks].blank? rescue true)
+if (Setting[:service_hooks].blank?)
   puts "Please configure your service hook settings in the admin screen."
 end
 
