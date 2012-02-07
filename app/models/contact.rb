@@ -1,5 +1,5 @@
 class Contact
-  def merge_with_service_hook(master, ignored_attr = {})
+  def merge_with_with_service_hook(master, ignored_attr = {})
     if merge_with_without_service_hook(master, ignored_attr)
       merge_url = (Setting[:service_hooks] || {})["merge_url"]
       api_token = (Setting[:service_hooks] || {})["api_token"]
@@ -25,5 +25,5 @@ class Contact
     end
   end
 
-  alias_method_chain :merge, :service_hook
+  alias_method_chain :merge_with, :service_hook
 end
