@@ -1,3 +1,3 @@
-module FatFreeCrmCrowd
+module FatFreeCrmServiceHooks
   VERSION = '1.0.1'
 end
