@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path('../lib', __FILE__)
-require 'fat_free_crm_service_hooks/version'
+require 'ffcrm_service_hooks/version'
 
 Gem::Specification.new do |s|
-  s.name = 'fat_free_crm_service_hooks'
+  s.name = 'ffcrm_service_hooks'
   s.authors = ['Ben Tillman']
   s.summary = 'Fat Free CRM - Service hooks'
   s.description = 'Fat Free CRM - Service hooks'
