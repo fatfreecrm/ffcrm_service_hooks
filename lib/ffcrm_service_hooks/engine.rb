@@ -1,11 +1,8 @@
 module ::FatFreeCrmServiceHooks
   class Engine < Rails::Engine
-    initializer "ffcrm_service_hooks.boot",
-      :after => "ffcrm_merge.boot" do
-        'ffcrm_service_hooks/contact'
-    end
-
     config.to_prepare do
+      require 'ffcrm_service_hooks/contact'
+    
       if FatFreeCRM::Tabs.admin.present?
 
         FatFreeCRM::Tabs.admin << {
