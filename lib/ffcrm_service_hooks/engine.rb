@@ -1,4 +1,4 @@
-module ::FatFreeCrmServiceHooks
+module FatFreeCRM::ServiceHooks
   class Engine < Rails::Engine
     config.to_prepare do
       require 'ffcrm_service_hooks/contact'

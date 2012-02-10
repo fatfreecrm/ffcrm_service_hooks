@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.summary = 'Fat Free CRM - Service hooks'
   s.description = 'Fat Free CRM - Service hooks'
   s.files = `git ls-files`.split("\n")
-  s.version = FatFreeCrmServiceHooks::VERSION
+  s.version = FatFreeCRM::ServiceHooks::VERSION
 
   s.add_development_dependency 'rspec-rails', '~> 2.6'
   s.add_development_dependency 'capybara'
