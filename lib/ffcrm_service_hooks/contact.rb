@@ -1,4 +1,4 @@
-class Contact
+Contact.class_eval do
   def merge_with_with_service_hook(master, ignored_attr = {})
     if merge_with_without_service_hook(master, ignored_attr)
       merge_url = (Setting[:service_hooks] || {})["merge_url"]
