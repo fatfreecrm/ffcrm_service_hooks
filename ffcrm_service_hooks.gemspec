@@ -14,5 +14,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'combustion'
   s.add_dependency 'fat_free_crm'
+  s.add_dependency 'ffcrm_merge'
   s.add_dependency 'nestful'
 end
