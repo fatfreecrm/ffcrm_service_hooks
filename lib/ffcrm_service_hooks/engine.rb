@@ -7,7 +7,8 @@ module FatFreeCRM
         begin
           FatFreeCRM::Tabs.admin << {
             :text => "Service Hooks",
-            :url => { :controller => "admin/service_hooks" }
+            :url => { :controller => "admin/service_hooks" },
+            :icon => 'fa-bullhorn'
           }
         rescue TypeError
           puts "You must migrate your settings table."
