@@ -1,26 +1,23 @@
-require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
+require 'rails_helper'
 
-describe Contact do
-  before :each do
-    @contact = Factory(:contact,
-                       :title  => "Master Contact")
-    @dup_contact = Factory(:contact,
-                           :title  => "Duplicate Contact")
-  end
+describe 'Contact' do
+
+  let(:contact) { FactoryGirl.create(:contact, title: "Master Contact") }
+  let(:dup_contact) { FactoryGirl.create(:contact, title: "Duplicate Contact") }
 
   it "should send a POST request to a configured merge hook URL" do
     test_url = "http://www.example.com"
     Setting.service_hooks = {"merge_url" => test_url}
-    Nestful.should_receive(:post).
+    expect(Nestful).to receive(:post).
             with(test_url, :format => :form,
                            :params => {
                               :merge => {
-                                 :old_contact => {:id => @dup_contact.id},
-                                 :new_contact => {:id => @contact.id, :name => @dup_contact.name}
+                                 :old_contact => {:id => dup_contact.id},
+                                 :new_contact => {:id => contact.id, :name => dup_contact.name}
                               }
                             })
 
-    @dup_contact.merge_with(@contact)
+    dup_contact.merge_with(contact)
   end
 end
 

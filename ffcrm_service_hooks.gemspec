@@ -10,9 +10,15 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split("\n")
   s.version = FatFreeCRM::ServiceHooks::VERSION
 
-  s.add_development_dependency 'rspec-rails', '~> 2.6'
-  s.add_development_dependency 'capybara'
-  s.add_development_dependency 'combustion'
-  s.add_dependency 'fat_free_crm'
-  s.add_dependency 'nestful'
+  s.add_dependency "rails"
+  s.add_dependency "fat_free_crm"
+  s.add_dependency "ffcrm_merge"
+  s.add_dependency "nestful"
+
+  s.add_development_dependency 'pg'
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'factory_girl_rails'
+  s.add_development_dependency 'pry'
+  s.add_development_dependency 'ffaker'
+
 end
