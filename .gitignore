@@ -1,0 +1,8 @@
+*.log
+*/reports
+coverage
+db/development_structure.sql
+spec/dummy/db/*.sqlite3
+spec/dummy/log/*.log
+spec/dummy/tmp/
+spec/dummy/.sass-cache

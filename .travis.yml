@@ -1,7 +1,13 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.0.0
+  - 2.2.1
+
+cache: bundler
+
+before_script:
+  - sh -c "psql -c 'create database ffcrm_service_hooks_test;' -U postgres"
+  - sh -c "RAILS_ENV=test bundle exec rake db:schema:load"
 
 bundler_args: --path=vendor/bundle --without heroku
 
