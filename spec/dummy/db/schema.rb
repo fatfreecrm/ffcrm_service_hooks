@@ -15,6 +15,13 @@ ActiveRecord::Schema.define(version: 20180107082701) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "account_aliases", :force => true do |t|
+    t.integer  "account_id"
+    t.integer  "destroyed_account_id"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
+
   create_table "account_contacts", id: :serial, force: :cascade do |t|
     t.integer "account_id"
     t.integer "contact_id"
@@ -133,6 +140,13 @@ ActiveRecord::Schema.define(version: 20180107082701) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string "state", limit: 16, default: "Expanded", null: false
+  end
+
+  create_table "contact_aliases", :force => true do |t|
+    t.integer  "contact_id"
+    t.integer  "destroyed_contact_id"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
   end
 
   create_table "contact_opportunities", id: :serial, force: :cascade do |t|
