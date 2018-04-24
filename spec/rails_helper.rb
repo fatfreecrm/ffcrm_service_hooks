@@ -3,7 +3,7 @@ ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require 'rspec/rails'
 require 'spec_helper'
-require 'factory_girl_rails'
+require 'factory_bot_rails'
 require 'ffaker'
 
 Rails.backtrace_cleaner.remove_silencers!
