@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/fatfreecrm/ffcrm_merge.git
+  remote: https://github.com/fatfreecrm/ffcrm_merge.git
   revision: d9dec748aae9aadd014bbb139113a23d66eb5e41
   branch: master
   specs:
@@ -123,11 +123,11 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.2)
     mime-types (1.25.1)
-    mini_portile2 (2.6.1)
+    mini_portile2 (2.8.0)
     multi_json (1.15.0)
     nestful (1.1.4)
-    nokogiri (1.12.5)
-      mini_portile2 (~> 2.6.1)
+    nokogiri (1.13.4)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     paper_trail (2.7.2)
       activerecord (~> 3.0)
@@ -150,7 +150,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (4.0.6)
-    racc (1.5.2)
+    racc (1.6.0)
     rack (1.4.7)
     rack-cache (1.12.1)
       rack (>= 0.4)
