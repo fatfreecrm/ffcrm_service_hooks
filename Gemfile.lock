@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/fatfreecrm/ffcrm_merge.git
-  revision: 7b6dbd1bb47dc723a9cb354186a2c1d598d863f1
+  revision: 7d60186359de0e005debd9d5cbb6f7c13e50b25b
   branch: master
   specs:
     ffcrm_merge (1.3.1)
@@ -78,12 +78,12 @@ GEM
     coderay (1.1.3)
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
-    countries (5.2.1)
+    countries (5.3.0)
       unaccent (~> 0.3)
-    country_select (8.0.0)
+    country_select (8.0.1)
       countries (~> 5.0)
     crass (1.0.6)
-    css_parser (1.12.0)
+    css_parser (1.14.0)
       addressable
     date (3.3.3)
     devise (4.8.1)
@@ -162,7 +162,7 @@ GEM
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.8.0)
+    mail (2.8.0.1)
       mini_mime (>= 0.1.1)
       net-imap
       net-pop
@@ -177,7 +177,7 @@ GEM
       rake
     mini_mime (1.1.2)
     mini_portile2 (2.8.1)
-    minitest (5.16.3)
+    minitest (5.17.0)
     nestful (1.1.4)
     net-imap (0.3.4)
       date
@@ -189,7 +189,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.10)
+    nokogiri (1.14.0)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -212,7 +212,7 @@ GEM
       method_source (~> 1.0)
     public_suffix (5.0.1)
     racc (1.6.2)
-    rack (2.2.4)
+    rack (2.2.5)
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (5.2.8.1)
