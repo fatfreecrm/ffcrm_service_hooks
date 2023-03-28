@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/fatfreecrm/ffcrm_merge.git
-  revision: a1f7c63d21e1d42e96246a17371e35de73fd9bab
+  revision: 16ab908867944dc015e97b41199f61e7228a9e07
   branch: master
   specs:
     ffcrm_merge (1.3.1)
@@ -213,7 +213,7 @@ GEM
     public_suffix (5.0.1)
     racc (1.6.2)
     rack (2.2.6.4)
-    rack-test (2.0.2)
+    rack-test (2.1.0)
       rack (>= 1.3)
     rails (5.2.8.1)
       actioncable (= 5.2.8.1)
