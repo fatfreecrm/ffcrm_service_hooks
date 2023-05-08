@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/fatfreecrm/ffcrm_merge.git
-  revision: 53589b972c2399f54dce8f4ba01ef60913ef9ac1
+  revision: b9de02d5a4035e2601248383a6503839d53fe5ea
   branch: master
   specs:
     ffcrm_merge (1.3.1)
