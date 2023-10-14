@@ -1,23 +1,15 @@
 module FatFreeCRM
   module ServiceHooks
     class Engine < Rails::Engine
+
       config.to_prepare do
         require 'ffcrm_service_hooks/contact'
-
-        begin
-          FatFreeCRM::Tabs.admin << {
-            :text => "Service Hooks",
-            :url => { :controller => "admin/service_hooks" },
-            :icon => 'fa-bullhorn'
-          }
-        rescue TypeError
-          puts "You must migrate your settings table."
-        end
-
-        if Setting[:service_hooks].blank?
-          puts "Please configure your service hook settings on the admin tab."
+        tab_urls = FatFreeCRM::Tabs.admin.map{|tab| tab[:url]}.map{|url| url[:controller]}
+        unless tab_urls.include? 'admin/service_hooks'
+          FatFreeCRM::Tabs.admin << {url: { controller: "admin/service_hooks" }, text: "Service Hooks", icon: 'fa-bullhorn'}
         end
       end
+
     end
   end
 end
