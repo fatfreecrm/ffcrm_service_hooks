@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/fatfreecrm/fat_free_crm.git
-  revision: f14782ac1d2dbe156e4956c6edbe7a39914b5cdf
+  revision: 1823e272aa86cf19fb64c69691ec6142127e6981
   specs:
     fat_free_crm (0.21.0)
       activemodel-serializers-xml
@@ -138,8 +138,8 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
-    acts-as-taggable-on (9.0.1)
-      activerecord (>= 6.0, < 7.1)
+    acts-as-taggable-on (10.0.0)
+      activerecord (>= 6.1, < 7.2)
     acts_as_list (1.1.0)
       activerecord (>= 4.2)
     addressable (2.8.5)
@@ -212,7 +212,7 @@ GEM
     mini_mime (1.1.5)
     minitest (5.20.0)
     nestful (1.1.4)
-    net-imap (0.4.1)
+    net-imap (0.4.2)
       date
       net-protocol
     net-pop (0.1.2)
@@ -329,7 +329,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     temple (0.10.3)
-    thor (1.2.2)
+    thor (1.3.0)
     tilt (2.3.0)
     timeout (0.4.0)
     tzinfo (2.0.6)
