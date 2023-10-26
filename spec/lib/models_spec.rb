@@ -9,11 +9,11 @@ describe 'Contact' do
     test_url = "http://www.example.com"
     Setting.service_hooks = {"merge_url" => test_url}
     expect(Nestful).to receive(:post).
-            with(test_url, :format => :form,
-                           :params => {
-                              :merge => {
-                                 :old_contact => {:id => dup_contact.id},
-                                 :new_contact => {:id => contact.id, :name => dup_contact.name}
+            with(test_url, format: :form,
+                           params: {
+                              merge: {
+                                 old_contact: {id: dup_contact.id},
+                                 new_contact: {id: contact.id, name: dup_contact.name}
                               }
                             })
 

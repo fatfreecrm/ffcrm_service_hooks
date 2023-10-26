@@ -16,7 +16,8 @@ GIT
 
 GIT
   remote: https://github.com/fatfreecrm/fat_free_crm.git
-  revision: 1823e272aa86cf19fb64c69691ec6142127e6981
+  revision: e6883b0444abbc28908bb2a9da6fce7b62d951ee
+  branch: master
   specs:
     fat_free_crm (0.21.0)
       activemodel-serializers-xml
@@ -57,11 +58,12 @@ GIT
 
 GIT
   remote: https://github.com/fatfreecrm/ffcrm_merge.git
-  revision: 061aabc2b7a5f8b89de6d244a104f28b8a6fcc97
-  branch: rails4
+  revision: ab5108ffa2e05b3786beb03a07cf0ffac6a9782e
+  branch: master
   specs:
     ffcrm_merge (2.0.0)
-      fat_free_crm (>= 0.14.0)
+      fat_free_crm
+      rails
 
 PATH
   remote: .
