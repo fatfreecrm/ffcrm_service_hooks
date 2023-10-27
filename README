@@ -1,6 +1,8 @@
-Fat Free CRM - Mingle integration
+Fat Free CRM - Service Hooks Integration
 =================================
 
-This plugin provides create and view functionality for mingle tickets.
+This plugin provides an admin interface to create service hooks. You need to write the actual hooks yourself.
+
+In it's current form, it's no longer very useful.
 
 Copyright (c) 2011 Ben Tillman, Crossroads Foundation, released under the MIT license

@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/fatfreecrm/fat_free_crm.git
-  revision: e6883b0444abbc28908bb2a9da6fce7b62d951ee
+  revision: 0d834c8c20b41be3b07e19015ca37c1bb6450090
   branch: master
   specs:
     fat_free_crm (0.21.0)
@@ -56,22 +56,11 @@ GIT
       thor
       will_paginate
 
-GIT
-  remote: https://github.com/fatfreecrm/ffcrm_merge.git
-  revision: ab5108ffa2e05b3786beb03a07cf0ffac6a9782e
-  branch: master
-  specs:
-    ffcrm_merge (2.0.0)
-      fat_free_crm
-      rails
-
 PATH
   remote: .
   specs:
     ffcrm_service_hooks (1.0.2)
       fat_free_crm
-      ffcrm_merge
-      nestful
       rails
 
 GEM
@@ -213,7 +202,6 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.5)
     minitest (5.20.0)
-    nestful (1.1.4)
     net-imap (0.4.2)
       date
       net-protocol
@@ -354,7 +342,6 @@ DEPENDENCIES
   factory_bot_rails
   fat_free_crm!
   ffaker
-  ffcrm_merge!
   ffcrm_service_hooks!
   jquery-rails
   listen

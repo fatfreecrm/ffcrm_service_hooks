@@ -3,7 +3,6 @@ module FatFreeCRM
     class Engine < Rails::Engine
 
       config.to_prepare do
-        require 'ffcrm_service_hooks/contact'
         tab_urls = FatFreeCRM::Tabs.admin.map{|tab| tab[:url]}.map{|url| url[:controller]}
         unless tab_urls.include? 'admin/service_hooks'
           FatFreeCRM::Tabs.admin << {url: { controller: "admin/service_hooks" }, text: "Service Hooks", icon: 'fa-bullhorn'}
