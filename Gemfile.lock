@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/fatfreecrm/fat_free_crm.git
-  revision: 0d834c8c20b41be3b07e19015ca37c1bb6450090
+  revision: 1305f0ab24690b2fc349a5df2c3ed5858fc50a6a
   branch: master
   specs:
     fat_free_crm (0.21.0)
@@ -267,7 +267,7 @@ GEM
       method_source
       rake (>= 12.2)
       thor (~> 1.0)
-    rake (13.0.6)
+    rake (13.1.0)
     ransack (2.6.0)
       activerecord (>= 6.0.4)
       activesupport (>= 6.0.4)
