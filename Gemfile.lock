@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/fatfreecrm/fat_free_crm.git
-  revision: 61ea47882a4f35ddfde7bb552a2a55f359a60927
+  revision: 843eef4d74206a72bf81de5f900dd9495cd4a16f
   branch: master
   specs:
     fat_free_crm (0.21.0)
@@ -204,14 +204,14 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.5)
     minitest (5.20.0)
-    net-imap (0.4.9)
+    net-imap (0.4.9.1)
       date
       net-protocol
     net-pop (0.1.2)
       net-protocol
     net-protocol (0.2.2)
       timeout
-    net-smtp (0.4.0)
+    net-smtp (0.4.0.1)
       net-protocol
     nio4r (2.7.0)
     nokogiri (1.16.0-x86_64-linux)
