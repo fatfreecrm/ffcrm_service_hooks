@@ -141,7 +141,7 @@ GEM
     cancancan (3.5.0)
     chronic (0.10.2)
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.2.2)
+    concurrent-ruby (1.2.3)
     countries (5.7.1)
       unaccent (~> 0.3)
     country_select (8.0.3)
@@ -203,7 +203,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.5)
-    minitest (5.20.0)
+    minitest (5.21.2)
     net-imap (0.4.9)
       date
       net-protocol
@@ -295,7 +295,7 @@ GEM
     rspec-mocks (3.12.6)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
-    rspec-rails (6.1.0)
+    rspec-rails (6.1.1)
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       railties (>= 6.1)
