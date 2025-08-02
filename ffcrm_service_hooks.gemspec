@@ -5,8 +5,8 @@ require 'ffcrm_service_hooks/version'
 Gem::Specification.new do |s|
   s.name = 'ffcrm_service_hooks'
   s.authors = ['Ben Tillman']
-  s.summary = 'Fat Free CRM - Service hooks'
-  s.description = 'Fat Free CRM - Service hooks'
+  s.summary = 'Fat Free CRM - Service/web hooks'
+  s.description = 'Fat Free CRM - Service/web hooks'
   s.files = `git ls-files`.split("\n")
   s.version = FatFreeCRM::ServiceHooks::VERSION
 

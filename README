@@ -1,4 +1,4 @@
-Fat Free CRM - Service Hooks Integration
+Fat Free CRM - Service Hooks/Web Hooks Integration
 =================================
 
 This plugin provides an admin interface to create service hooks. You need to write the actual hooks yourself.
