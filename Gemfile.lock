@@ -148,7 +148,7 @@ GEM
     country_select (8.0.3)
       countries (~> 5.0)
     crass (1.0.6)
-    css_parser (1.16.0)
+    css_parser (1.22.0)
       addressable
     date (3.5.1)
     devise (4.9.3)
